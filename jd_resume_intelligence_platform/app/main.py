@@ -80,6 +80,8 @@ async def match_pdf(resume_file: UploadFile = File(...),
         "raw_text": jd_parsed["raw_text"],
         "warning": "Required/preferred skills are manually supplied in this baseline; automatic classification is not implemented."
     }
+
+                      
     result = {
         "resume": resume,
         "job_description": jd,
